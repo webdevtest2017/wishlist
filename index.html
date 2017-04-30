@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WishList</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+</head>
+<body>
+	<header id="header">
+		<div class="group">
+			<input type="text" id="wishInput" placeholder="I wish...">
+			<button id="addBtn"">Add</button>
+		</div>
+	</header>
+	<div class="container">
+				
+			<div class="content">
+				<div class="col wish-col">
+					<h1>Wish</h1>
+					<hr>
+					<div class="wishWrapper">
+						<ol id="wishes">
+							
+						</ol>
+					</div>
+
+					<div class="totalW">
+						<hr>
+						<h5 id="totalWishes"></h5>
+					</div>
+
+				</div>
+
+				<div class="col done-col">
+					<h1>Done</h1>
+					<hr>
+					<div class="wishWrapper">
+						<ul id="done">
+
+						</ul>
+					</div>
+
+					<div class="totalD">
+						<hr>
+						<h5 id="totalDone"></h5>
+					</div>
+
+				</div>
+			</div>
+
+	</div>
+	
+	<footer>
+		<a id="openVersionControlModal" href="#versionControlModal">Version 1.0</a>
+		<div id="versionControlModal" class="modalDialog">
+			<div>
+				<a href="#closeModal" title="Close" class="closeModal"><svg id="Layer1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>close</title><polygon points="42.06 10.06 39.94 7.94 25 22.88 10.06 7.94 7.94 10.06 22.88 25 7.94 39.94 10.06 42.06 25 27.12 39.94 42.06 42.06 39.94 27.12 25 42.06 10.06"/></svg></a>
+				<h2>Version 1.0</h2>
+				<ul>
+					<li>outline your wishes</li>
+					<li>click "arrow" to move your wish to the right "Done" list</li>
+					<li>delete a wish if not required anymore</li>
+					<li>all your data will be stored in Local Storage</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
